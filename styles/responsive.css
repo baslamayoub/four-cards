@@ -1,0 +1,19 @@
+@media (min-width: 768px) {
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 2rem;
+  }
+   .cards #card1 {
+  grid-column: 4/10;
+  background-color: rebeccapurple ;
+}
+.cards #card2 {
+
+}
+.cards #card3 {
+}
+.cards #card4 {
+}
+
+}

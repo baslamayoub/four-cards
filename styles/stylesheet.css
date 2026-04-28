@@ -9,6 +9,7 @@ html {
   font-size: 62.5%;
 }
 :root {
+  --background-white: #f5f6f5;
   --Red: hsl(0, 78%, 62%);
   --Cyan: hsl(180, 62%, 55%);
   --Orange: hsl(34, 97%, 64%);
@@ -36,9 +37,78 @@ html {
   font-weight: 600;
   font-style: normal;
 }
+html {
+  font-size: 62.5%;
+}
 body {
   font-family: "poppins", sans-serif;
+  background-color: var(--background-white);
+  color: var(--Grey-500);
 }
 h1 {
   font-weight: 600;
 }
+.title_wrapper {
+  text-align: center;
+  margin-bottom: 5rem;
+  max-width: 31.4rem;
+  margin: 5rem auto;
+}
+.title_wrapper .title {
+  font-size: 2.4rem;
+  font-weight: 200;
+}
+.title_wrapper .sub_title {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.title_wrapper .desc {
+  font-size: 1.5rem;
+  margin-top: 1.6rem;
+}
+.cards {
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  margin: 2rem;
+  
+}
+.card {
+  margin:  0 auto;
+  background-color: var(--White);
+  width: 100%;
+  height: 25rem;
+  border-top-width: 0.5rem  ;
+  border-top-style: solid  ;
+  border-radius: .6rem;
+  padding: 3.2rem;
+  
+}
+.card .card_title{
+  font-size: 2rem;
+}
+.card .card_desc{
+  font-size: 1.3rem;
+  color: var(--Grey-400);
+  font-weight: 200;
+  line-height: 160%;
+  letter-spacing: 1px;
+}
+.card .card_image{
+  display: flex;
+  
+}
+.cards #card1 {
+  border-color: var(--Cyan) ;
+}
+.cards #card2 {
+  border-color: var(--Blue);
+}
+.cards #card3 {
+  border-color: var(--Orange);
+}
+.cards #card4 {
+  border-color: var(--Red);
+}
+
